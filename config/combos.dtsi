@@ -18,4 +18,4 @@ compatible = "zmk,combos";
 ╰────────╮30 31│ │32 33╭────────╯
          ╰─────╯ ╰─────╯         */
 
-COMBO(escape, &kp ESC, 13, 16)
+COMBO(escape, &kp ESC, 13 16)
