@@ -53,11 +53,11 @@
         right_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │          │  ^       │  $       │  ;       │   │          │ {        │ }        │ <        │  >       │
-            &trans      &trans     &kp CARET  &kp DLLR  &kp SEMI       &kp HOME   &kp LBRC  &kp RBRC   &kp LT     &kp GT
+        //│          │          │  ^       │  $       │  ;       │   │  Delete  │ {        │ }        │ <        │  >       │
+            &trans      &trans     &kp CARET  &kp DLLR  &kp SEMI       &kp DEL   &kp LBRC  &kp RBRC   &kp LT     &kp GT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ [        │  ]       │  (       │  )       │  :       │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
-            &kp LBKT    &kp RBKT   &kp LPAR   &kp RPAR  &kp COLON      &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp SEMI
+            HRML(LBKT,  RBKT,      LPAR,      RPAR)     &kp COLON      &kp LARW   HRMR(DARW,  UARW,     RARW,      SEMI)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
            &trans     &trans     &trans     &trans     &trans          &trans     &kp PG_UP  &kp PG_DN   &trans     &trans
@@ -71,19 +71,17 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ ~        │  `       │  -       │  *       │  \       │   │          │  4       │  5       │  6       │  %       │
-            &kp TILDE  &kp GRAVE  &kp MINUS  &kp ASTRK  &kp BSLH         &kp CARET  &kp N4     &kp N5     &kp N6     &kp PRCNT
+            &kp TILDE  &kp GRAVE  &kp MINUS  &kp ASTRK  &kp BSLH       &kp CARET  &kp N4     &kp N5     &kp N6     &kp PRCNT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  +       │  =       │  _       │  "       │  /       │   │  CAPS_W  │  1       │  2       │  3       │  .       │
-            &kp PLUS   &kp EQUAL  &kp UNDER  &kp DQT   &kp FSLH        &kp ASTRK  &kp N1     &kp N2     &kp N3     &kp DOT
+            HRML(PLUS, EQUAL,      UNDER,     DQT)      &kp FSLH       &kp ASTRK   HRMR(N1,   N2,       N3,         DOT)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  @       │  !       │  ?       │  '       │  |       │   │          │  7       │  8       │  9       │          │
-            // goal: &kp AT     &kp EXCL   &kp QMARK  &APOS      &kp PIPE        &trans     &kp N7     &kp N8     &kp N9     &trans
-            // original: &kp PLUS   &kp EQUAL  &kp UNDER  &kp DQT   &kp FSLH        &kp ASTRK  &kp N1     &kp N2     &kp N3     &kp DOT
-            &kp PLUS   &kp EQUAL  &kp UNDER  &kp DQT   &kp FSLH        &trans     &kp N7     &kp N8     &kp N9     &trans
+        //│          │  !       │  ?       │  '       │          │   │          │  7       │  8       │  9       │          │
+            &trans    &kp EXCL  &kp QMARK    &kp APOS   &trans        &trans     &kp N7     &kp N8     &kp N9     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
+                                             &trans     &trans         &trans     &kp N0
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
     };
-};
+};;
