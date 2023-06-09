@@ -60,7 +60,7 @@
             &kp LBKT    &kp RBKT   &kp LPAR   &kp RPAR  &kp COLON      &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &trans     &trans     &trans     &trans     &trans          &trans     &kp PG_UP  &kp PD_DN   &trans     &trans
+           &trans     &trans     &trans     &trans     &trans          &trans     &kp PG_UP  &kp PG_DN   &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
