@@ -60,7 +60,7 @@
             HRML(LBKT,  RBKT,      LPAR,      RPAR)     &kp COLON      &kp LARW   HRMR(DARW,  UARW,     RARW,      SEMI)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &trans          CTRL+B    &kp PG_UP  &kp PG_DN   &trans     &trans
+            &trans     &trans     &trans     &trans     &trans      &kp LGUI(B) &kp LGUI(D) &kp LGUI(U) &kp LGUI(F)  &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
