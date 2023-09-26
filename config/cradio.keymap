@@ -74,7 +74,7 @@
             &kp TILDE  &kp GRAVE  &kp MINUS  &kp ASTRK  &kp BSLH       &kp CARET  &kp N4     &kp N5     &kp N6     &kp PRCNT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  +       │  =       │  _       │  "       │  /       │   │  CAPS_W  │  1       │  2       │  3       │  .       │
-            HRML(PLUS, EQUAL,      UNDER,     DQT)      &kp FSLH    &kp caps_word   HRMR(N1,   N2,       N3,         DOT)
+            HRML(PLUS, EQUAL,      UNDER,     DQT)      &kp FSLH      &caps_word   HRMR(N1,   N2,       N3,         DOT)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  @       │  !       │  ?       │  '       │  |       │   │          │  7       │  8       │  9       │          │
             &kp AT    &kp EXCL  &kp QMARK    &kp APOS   &kp PIPE        &trans     &kp N7     &kp N8     &kp N9     &trans
